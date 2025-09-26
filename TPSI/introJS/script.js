@@ -43,3 +43,9 @@ console.log(str.slice(0, 9)) //prende la sottostringa da 0 a 9 (9 escluso)
 console.log(str.replace("Nicolò", "Nico")) // con replaceAll sostituisco tutte le occorrenze, con replace solo la prima
 
 console.log(str.includes("Casiraghi")) // restituisce true se la sottostringa è contenuta nella stringa
+
+// OPERZAZIONI
+// l'ordine delle operazioni è come in matematica
+// potenze n1**n2
+console.log(2**3) // 2^3 = 8
+console.log(2**"Ciao") // restituisce NaN (not a number) perchè non può fare l'operazione
