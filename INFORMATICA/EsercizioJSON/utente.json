@@ -1,0 +1,72 @@
+[
+  {
+    "nome": "Luca",
+    "cognome": "Rossi",
+    "email": "luca.rossi@example.com",
+    "login": "l.rossi",
+    "password": "G7!kR2#vP9"
+  },
+  {
+    "nome": "Giulia",
+    "cognome": "Bianchi",
+    "email": "giulia.bianchi@example.com",
+    "login": "g.bianchi",
+    "password": "yT4$eL8mQ2"
+  },
+  {
+    "nome": "Marco",
+    "cognome": "Ferrari",
+    "email": "marco.ferrari@example.com",
+    "login": "m.ferrari",
+    "password": "Pz9@xH6wR1"
+  },
+  {
+    "nome": "Francesca",
+    "cognome": "Esposito",
+    "email": "francesca.esposito@example.com",
+    "login": "f.esposito",
+    "password": "N3^qV7!sK4"
+  },
+  {
+    "nome": "Alessandro",
+    "cognome": "Russo",
+    "email": "alessandro.russo@example.com",
+    "login": "a.russo",
+    "password": "W8&bM5%tZ0"
+  },
+  {
+    "nome": "Sofia",
+    "cognome": "Greco",
+    "email": "sofia.greco@example.com",
+    "login": "s.greco",
+    "password": "C2#nY9!pL6"
+  },
+  {
+    "nome": "Davide",
+    "cognome": "Conti",
+    "email": "davide.conti@example.com",
+    "login": "d.conti",
+    "password": "R5*eF1@uQ8"
+  },
+  {
+    "nome": "Martina",
+    "cognome": "Moretti",
+    "email": "martina.moretti@example.com",
+    "login": "m.moretti",
+    "password": "H6!sT3#oV2"
+  },
+  {
+    "nome": "Riccardo",
+    "cognome": "Romano",
+    "email": "riccardo.romano@example.com",
+    "login": "r.romano",
+    "password": "Z1%kP7^dM5"
+  },
+  {
+    "nome": "Elena",
+    "cognome": "Mariani",
+    "email": "elena.mariani@example.com",
+    "login": "e.mariani",
+    "password": "F4@wC8&nS3"
+  }
+]
