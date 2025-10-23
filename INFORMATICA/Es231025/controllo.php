@@ -11,7 +11,7 @@ if(!file_exists($file_name)) {
     foreach($dati as $utente_salvato) {
         if($utente_salvato["email"] === $_GET["email"] && $utente_salvato["password"] === $_GET["password"]){
             echo("<h1>Accesso riuscito</h1><br>");
-            echo("<a href='pagina.html'><button>Vai alla pagina</button></a>");
+            echo("<a href='index.html'><button>Vai alla pagina</button></a>");
             $controlla_esistenza = true;
         }
     }

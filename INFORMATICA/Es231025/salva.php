@@ -20,7 +20,9 @@ if(!file_exists($file_name)) {
     // aggiungere l'utente
     $dati[] = $utente;
     // salvare la stringa in json
-    $json = json_encode($dati);
+    $json = json_encode($dati, JSON_PRETTY_PRINT); // JSON PRETTY PRINT per formattare il file in modo leggibile
+    // salvo la stringa sul file
+    file_put_contents($file_name, $json);
 
     echo("<h1>Registrazione completata</h1><br>");
     echo("<a href='login.html'><button>Torna al login per accedere</button></a>");
