@@ -16,7 +16,7 @@ if(!file_exists($file_name)) {
     // leggere file json
     $json = file_get_contents($file_name);
     // decodificare json
-    $dati = hash(json_decode($json, true));
+    $dati = json_decode($json, true);
     // aggiungere l'utente
     $dati[] = $utente;
     // salvare la stringa in json
