@@ -22,7 +22,7 @@
     $num2 = $_GET["num2"];
     $op = $_GET["op"];
 
-    switch("op"){
+    switch($op){
         case "Somma":
             $risultato = somma($num1, $num2);
             break;
