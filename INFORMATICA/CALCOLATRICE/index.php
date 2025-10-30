@@ -116,7 +116,7 @@
         <input type="submit" name="op" value="Sottrazione"><br>
         <input type="submit" name="op" value="Moltiplicazione"><br>
         <input type="submit" name="op" value="Divisione"><br><br>
-        <label for="result">Risultato: <?php echo($result); ?></label>
+        <label for="result">Risultato: <?php echo($risultato); ?></label>
     </form>
 
 </body>
