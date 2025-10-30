@@ -1,24 +1,41 @@
 <?php
 
+    function somma($num1, $num2){
+        return $num1 + $num2;
+    }
+    function sottrazione($num1, $num2){
+        return $num1 - $num2;
+    }
+
+    function moltiplicazione($num1, $num2){
+        return $num1 * $num2;
+    }
+    function divisione($num1, $num2){
+        if($num2 != 0) {
+            return $num1 / $num2;
+        } else {
+            return "Errore: Divisione per zero";
+        }
+    }
+
     $num1 = $_GET["num1"];
     $num2 = $_GET["num2"];
     $op = $_GET["op"];
-    if($op === "Somma") {
-        $result = $num1 + $num2;
-    } elseif($op === "Sottrazione") {
-        $result = $num1 - $num2;
-    } elseif($op === "Moltiplicazione") {
-        $result = $num1 * $num2;
-    } elseif($op === "Divisione") {
-        if($num2 != 0) {
-            $result = $num1 / $num2;
-        } else {
-            $result = "Errore: Divisione per zero";
-        }
-    } else {
-        $result = "";
-    }
 
+    switch("op"){
+        case "Somma":
+            $risultato = somma($num1, $num2);
+            break;
+        case "Sottrazione":
+            $risultato = sottrazione($num1, $num2);
+            break;
+        case "Moltiplicazione":
+            $risultato = moltiplicazione($num1, $num2);
+            break;
+        case "Divisione":
+            $risultato = divisione($num1, $num2);
+            break;    
+    }
 
 ?>
 
