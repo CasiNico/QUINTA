@@ -40,7 +40,9 @@ file_put_contents($salvataggio, $contenutoAggiornato);
 
 echo "<h2>Elenco Utenti:</h2>";
 foreach ($utenti as $nomeUtente => $numeroUtente) {
-    echo "<p>Nome: " . $nomeUtente . " - Numero: " . $numeroUtente . "</p>";
+    if ($nomeUtente !== "") {
+        echo "<p>Nome: " . $nomeUtente . " - Numero: " . $numeroUtente . "</p>";
+    }
 }
 
 ?>
