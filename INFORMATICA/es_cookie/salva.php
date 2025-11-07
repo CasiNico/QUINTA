@@ -6,7 +6,7 @@ $pws = $_GET['pws'];
 if ($_COOKIE[$login]) {
     echo 'utente loggato';
 }else {
-    echo 'utente in registrazione';
+    echo 'utente in registrazione... <br>';
     setcookie($login, $pws);
     echo 'utente registrato con successo';
 }
