@@ -14,7 +14,13 @@ let interval
 
 function updateView () {
     let min = parseInt(timer.seconds / 60)
+    if (Number(min) < 10) {
+        min = "0" + min
+    }
     let sec = timer.seconds % 60
+    if (Number(sec) < 10) {
+        sec = "0" + sec
+    }
     display.textContent = min + ":" + sec
 }
 
