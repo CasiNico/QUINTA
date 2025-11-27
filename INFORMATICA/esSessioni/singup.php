@@ -3,29 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SINGUP</title>
 </head>
 <body>
-    <form action="oggetti.php" method="GET">
-    <label for="login">login: </label>
-    <input type="text" name="login"> <br>
-    <label for="pws" name="pws">Password: </label>
-    <input type="text"><br>
-    <input type="submit" value="ACCEDI">
-</form>
 
 <?php
 
-$utenti = json_decode(file_get_contents("utenti"), true);
+if(isset($_POST["login"]) && isset($_POST["pws"])){
 
-$login = $_GET["login"];
-$password = $_GET["password"];
+    $utenti = json_decode(file_get_contents("utenti.json"), true);
 
-$json[$login] = $password;
+    $login = $_POST["login"];
+    $password = $_POST["pws"];
 
-file_put_contents("utenti.json", json_encode($utenti));
+    $utenti[$login] = $password;
+
+    file_put_contents("utenti.json", json_encode($utenti));
+
+    echo('
+        <h1>REGISTRAZIONE COMPLETATA, CIAO ' . $login . '</h1>
+        <a href="index.php">
+            <button>PREMI QUI PER TORNARE AL LOGIN</button>
+        </a>
+    ');
+
+    session_set_cookie_params(3600);
+    session_start();
+
+} else {
+    echo(
+    '
+    <h1>COMPILA IL FORM PER LA REGISTRAZIONE</h1>
+    <form action="singup.php" method="POST">
+        <label for="login">login: </label>
+        <input type="text" name="login"> <br>
+        <label for="pws" name="pws">Password: </label>
+        <input type="text" name="pws"><br></br>
+        <input type="submit" value="COMPLETA REGISTRAZIONE">
+    </form>
+    ');
+}
 
 ?>
 
 </body>
 </html>
+

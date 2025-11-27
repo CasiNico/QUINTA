@@ -9,6 +9,8 @@
   
 <?php
 
+$oggetti = json_decode(file_get_contents("oggetti.json"), true);
+
 echo('<table>');
 foreach ($oggetti as $num => $ogg) {
     echo ('
@@ -18,12 +20,12 @@ foreach ($oggetti as $num => $ogg) {
     </tr>
     ');
 }
-echo ('</table>');
+echo ('</table><br>');
 
 echo ('
-<form>
+<form method="GET" action="mostraCarrello.php">
     <label for="num">Numero oggetto: </label>
-    <input type="number" name="num"><br>
+    <input type="number" name="num"> <br> </br>
     <button type="submit">AGGIUNGI AL CARRELLO</button>
 </form>
 ');

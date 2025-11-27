@@ -7,11 +7,11 @@
 </head>
 <body>
 
-<form action="login.php" method="GET">
+<form action="login.php" method="POST">
     <label for="login">login: </label>
     <input type="text" name="login"> <br>
     <label for="pws" name="pws">Password: </label>
-    <input type="text" name="pws"><br>
+    <input type="text" name="pws"><br></br>
     <input type="submit" value="ACCEDI">
 </form>
 
