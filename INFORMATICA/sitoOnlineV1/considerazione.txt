@@ -1,0 +1,5 @@
+All'ingresso nel programma viene verificata la presenza della sessione.
+Se la sessione esiste recupera i dati di questa (carrello e utente).
+Altrimenti è possibile accedere in un account già esistente o crearne uno nuovo
+
+LOGIN
