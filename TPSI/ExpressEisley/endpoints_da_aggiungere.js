@@ -63,7 +63,9 @@ let missioni = [
     }
 ];
 
-// app.use()
 
 
-server.listen(3000, () => {console.log("servizio aperto sulla porta 3000")});
+
+server.listen(3000, () => {
+  console.log('servizio aperto sulla porta 3000')
+});
