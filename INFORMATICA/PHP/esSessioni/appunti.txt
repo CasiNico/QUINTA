@@ -1,0 +1,19 @@
+web app -> HTTP -> stateless (non mantiene lo stato)
+
+per renderla non stateless
+- campi nascosti > non sicuri
+- cookie > file di testo
+         > k : v
+         > setCookie(nome (k), valore (v), time, path, dominio, secure, httponly)
+         > informazioni non sensibili > leggibili da tutti
+- sessioni > salva informazioni sensibili sul web o database
+           > identificata da codice univoco che l'utente manda al web server (ID di sessione)
+
+SESSIONI 
+
+session_start() > avvia la sessione > crea sessione per la prima volta
+                                    > recupera l'ultima sessione creata se esistente e valida
+
+$_SESSION
+
+
